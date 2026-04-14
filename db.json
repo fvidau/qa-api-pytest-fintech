@@ -1,0 +1,9 @@
+{
+  "transactions": [
+    { "id": 1, "amount": 100 },
+    { "id": 2, "amount": 200 }
+  ],
+  "accounts": [
+    { "id": 1, "balance": 1000 }
+  ]
+}
