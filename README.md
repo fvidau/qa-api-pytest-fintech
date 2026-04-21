@@ -30,3 +30,16 @@ qa-api-pytest-fintech/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
+## Security Testing
+
+This project includes basic security checks:
+
+- Validation of security headers:
+  - Content-Security-Policy
+  - X-Content-Type-Options
+  - X-Frame-Options
+
+- Negative testing for invalid endpoints
+
+- Stability checks under multiple requests
