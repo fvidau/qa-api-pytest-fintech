@@ -1,9 +1,63 @@
 {
   "transactions": [
-    { "id": 1, "amount": 100 },
-    { "id": 2, "amount": 200 }
+    {
+      "id": 1,
+      "fromAccountId": 1,
+      "toAccountId": 2,
+      "amount": 500,
+      "currency": "USD",
+      "status": "completed",
+      "type": "transfer",
+      "timestamp": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "fromAccountId": 2,
+      "toAccountId": 3,
+      "amount": 200,
+      "currency": "USD",
+      "status": "pending",
+      "type": "transfer",
+      "timestamp": "2026-05-02T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "fromAccountId": 3,
+      "toAccountId": 1,
+      "amount": 750,
+      "currency": "EUR",
+      "status": "failed",
+      "type": "transfer",
+      "timestamp": "2026-05-03T09:15:00Z"
+    }
   ],
   "accounts": [
-    { "id": 1, "balance": 1000 }
+    {
+      "id": 1,
+      "accountNumber": "ACC-001",
+      "ownerId": 101,
+      "balance": 5000,
+      "currency": "USD",
+      "type": "checking",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "accountNumber": "ACC-002",
+      "ownerId": 102,
+      "balance": 12000,
+      "currency": "USD",
+      "type": "savings",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "accountNumber": "ACC-003",
+      "ownerId": 103,
+      "balance": 0,
+      "currency": "EUR",
+      "type": "checking",
+      "status": "inactive"
+    }
   ]
 }
